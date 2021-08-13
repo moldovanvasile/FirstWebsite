@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --primary-color:#007AF3;
+}
+body{
+    background: #aa8f8f;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar{
+    background: rgb(246, 246, 246);
+    padding: 1em;
+
+    nav{
+        display: none;
+    }
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+        
+        
+    }
+    
+}
+#Edu{
+    
+    padding: 0em 0em;
+}
+#Projects{
+    
+    padding: 0em 0em;
+}
+#HOME{
+    padding: 0em 0em;
+}
+#Work{
+    padding: 0em 0em;
+}
+#Tehnical{
+    padding: 0em 0em;
+}
+
+#Soft{
+    padding: 0em 0em;
+}
+#Contact{
+    padding: 0em 0em;
+}
+
+a{
+    color: #444444;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 5em 2em;
+}
+.hero{
+    text-align: center;
+}
+.left-colon{
+    .subhead{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(19, 17, 17);
+        letter-spacing: .3em;
+    }
+
+    h1{
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+    .hero-cta button{
+        
+	    background:var(--primary-color);
+	    color:white;
+	    text-decoration:none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 5em;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    
+}
+.hero-img{
+    width: 80%;
+    margin-top: 3em;
+    border-radius: 10%;
+    
+}
+section.Educatie{
+    background: #7a7171;
+    color: white;
+    h1{
+        padding-bottom: 1em;
+    }
+}
+
+ul.features-list{
+    margin: 0;
+    padding-left: .1em;
+
+    li  {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+        
+
+        
+    }
+
+    
+}
+ul.project{
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+}
+ul.tehnical{
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+section.Personal-Projects{
+    
+
+    ul.project{
+        margin: 0;
+        padding-left: .1em;
+
+
+        }
+    
+}
+
+section.Work-Experience{
+    background: #7a7171;
+    color: white;
+}
+
+ul.tehnical{
+    margin: 0;
+    padding-left: .1em;
+
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &::before{
+            content:'';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('images/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+section.Soft-skills{
+    background: #7a7171;
+    color: white;
+}
+ul.soft{
+    margin: 0;
+    padding-left: .1em;
+
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &::before{
+            content:'';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('images/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+.Personal-Projects{
+    background: #aa8f8f;
+    h1{
+        padding-bottom: 1em;
+    }
+
+     li{
+         background: #95a7b8;
+         text-align: center;
+         padding: 2em 1em;
+         width: 80%;
+         margin: 0 auto 5em auto;
+         border-radius: 1em;
+
+         img{
+            width: 5em;
+            height: 5em;
+            border: 3px solid #aa8f8f ;
+            border-radius: 50%;
+            margin-top: -4.5em;
+         }
+     }
+    
+}
+
+
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
+nav.menu-btn{
+   display: block;
+}
+
+.show-menu{
+    bottom: 0;
+}
+nav{
+    position:fixed;
+    z-index: 999;
+    width: 66%;
+    
+    top: 0;
+    background: black;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav{
+        margin-top: 5em;
+    }
+
+    li{
+
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: left;
+
+            &:hover{
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+.mobile-menu-exit{
+    float: left;
+    margin: .5em;
+    cursor: pointer;
+    
+}
+
+.logo{
+    display: contents;
+}
+.utn{
+    width: 50%;
+    height: 150px;
+    padding-left: 2.5em;
+    
+}
+
+@media only screen and (min-width: 500px){
+    .utn{
+        width: 60%;
+        height: 200px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .utn{
+        width: 70%;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .utn{
+        width: 50%;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 682px){
+    .mobile-menu, .mobile-menu-exit{
+        display: none;
+    }
+
+    
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+        
+    
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul{
+            display: flex;
+            
+
+        }
+
+        a{
+            color: black;
+            font-size: 1.1em;
+            padding: .1em 1em;
+            text-align: center;
+            
+        }
+
+        ul.primary-nav{
+            margin: 0;
+            padding-left: 1em
+            
+        }
+        ul.secondary-nav{
+            padding-left: 1em;
+        }
+        li.curent a{
+            color: red;
+            
+        }
+        li.Go-Contact a {
+            border: 3px solid var(--primary-color);
+            border-radius: 5em;
+
+            &:hover{
+                background: var(--primary-color);
+                color: white;
+            }
+            
+        }
+        li.education a{
+             
+            &:hover{
+                background: #aa8f8f;
+                color:black;
+                border-radius: 2em;
+            }
+            
+        }
+        li.personal a{
+
+            &:hover{
+                background: #aa8f8f;
+                color:black;
+                border-radius: 2em;
+            }
+        }
+
+        li.tehnical a{
+            &:hover{
+                background: #aa8f8f;
+                color:black;
+                border-radius: 2em;
+            }
+        }
+
+        li.soft a{
+            &:hover{
+                background: #aa8f8f;
+                color:black;
+                border-radius: 2em;
+            }
+        }
+
+        
+}
+
+ 
+   
+
+
+}
+
+@media only screen and (min-width: 860px) {
+
+    .container  {
+        width: 860px;
+        margin: 0 auto;
+
+        
+    }
+
+    section {
+        padding:10em 4em
+    }
+    
+    
+
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+
+        .left-colon{
+            margin: 3em 3em 0 5em;
+    
+            h1{
+                font-size: 3em;
+                width: 90%;
+            }
+            
+        }
+    }
+
+    .hero-img{
+        width: 50%;
+        margin-right: 7em;
+    }
+
+    .hero-cta{
+        display: flex;
+    }
+
+
+    ul.tehnical{
+        display: block;
+        margin-left: 5em;
+
+        li{
+            font-size: 1.4em;
+
+            &:before{
+                width: 30px;
+                height: 30px;
+
+            }
+        }
+    }
+
+    .navbar{
+        padding-left: 10em;
+    }
+
+    section.contact{
+        position: relative;
+
+        .container{
+            display: flex;
+        }
+
+        
+        
+        .contact-right{
+            
+            position:absolute;
+            right: 5em;
+                        
+            width: 50%;
+            height: 50%;
+                               
+                    
+
+                    
+            iframe{
+                height: 100%;
+                
+            }  
+        } 
+            
+        
+    }
+
+    .Educatie{
+
+        .container{
+            display: flex;
+        }
+        .utn{
+            width: 30%;
+            height: 200px;
+        }
+        
+        h1{
+            margin-left: 5%;
+        }
+        
+        
+    }
+}
+
+    
+
+ 
+@media only screen and (min-width: 1000px){
+
+
+    .logo{
+         display: initial;
+         width: 35%;
+         margin-right: 0;
+            
+    }
+
+    section.Educatie h1{
+        padding-left: 19em;
+    }
+
+    
+
+        
+    
+
+    
+    
+
+    
+    
+}

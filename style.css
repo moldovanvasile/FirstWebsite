@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color:#007AF3;
+}
+
+body {
+  background: #aa8f8f;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: #f6f6f6;
+  padding: 1em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+#Edu {
+  padding: 0em 0em;
+}
+
+#Projects {
+  padding: 0em 0em;
+}
+
+#HOME {
+  padding: 0em 0em;
+}
+
+#Work {
+  padding: 0em 0em;
+}
+
+#Tehnical {
+  padding: 0em 0em;
+}
+
+#Soft {
+  padding: 0em 0em;
+}
+
+#Contact {
+  padding: 0em 0em;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-colon .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #131111;
+  letter-spacing: .3em;
+}
+
+.left-colon h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.left-colon .hero-cta button {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.hero-img {
+  width: 80%;
+  margin-top: 3em;
+  border-radius: 10%;
+}
+
+section.Educatie {
+  background: #7a7171;
+  color: white;
+}
+
+section.Educatie h1 {
+  padding-bottom: 1em;
+}
+
+ul.features-list {
+  margin: 0;
+  padding-left: .1em;
+}
+
+ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.project {
+  margin: 0;
+  padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.tehnical {
+  margin: 0;
+  padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+section.Personal-Projects ul.project {
+  margin: 0;
+  padding-left: .1em;
+}
+
+section.Work-Experience {
+  background: #7a7171;
+  color: white;
+}
+
+ul.tehnical {
+  margin: 0;
+  padding-left: .1em;
+}
+
+ul.tehnical li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.tehnical li::before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("images/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
+}
+
+section.Soft-skills {
+  background: #7a7171;
+  color: white;
+}
+
+ul.soft {
+  margin: 0;
+  padding-left: .1em;
+}
+
+ul.soft li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.soft li::before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("images/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.Personal-Projects {
+  background: #aa8f8f;
+}
+
+.Personal-Projects h1 {
+  padding-bottom: 1em;
+}
+
+.Personal-Projects li {
+  background: #95a7b8;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.Personal-Projects li img {
+  width: 5em;
+  height: 5em;
+  border: 3px solid #aa8f8f;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+.show-menu {
+  bottom: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  top: 0;
+  background: black;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: left;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.logo {
+  display: contents;
+}
+
+.utn {
+  width: 50%;
+  height: 150px;
+  padding-left: 2.5em;
+}
+
+@media only screen and (min-width: 500px) {
+  .utn {
+    width: 60%;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .utn {
+    width: 70%;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .utn {
+    width: 50%;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 682px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.1em;
+    padding: .1em 1em;
+    text-align: center;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+    padding-left: 1em;
+  }
+  .navbar nav ul.secondary-nav {
+    padding-left: 1em;
+  }
+  .navbar nav li.curent a {
+    color: red;
+  }
+  .navbar nav li.Go-Contact a {
+    border: 3px solid var(--primary-color);
+    border-radius: 5em;
+  }
+  .navbar nav li.Go-Contact a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .navbar nav li.education a:hover {
+    background: #aa8f8f;
+    color: black;
+    border-radius: 2em;
+  }
+  .navbar nav li.personal a:hover {
+    background: #aa8f8f;
+    color: black;
+    border-radius: 2em;
+  }
+  .navbar nav li.tehnical a:hover {
+    background: #aa8f8f;
+    color: black;
+    border-radius: 2em;
+  }
+  .navbar nav li.soft a:hover {
+    background: #aa8f8f;
+    color: black;
+    border-radius: 2em;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .container {
+    width: 860px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .left-colon {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-colon h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-img {
+    width: 50%;
+    margin-right: 7em;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  ul.tehnical {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.tehnical li {
+    font-size: 1.4em;
+  }
+  ul.tehnical li:before {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar {
+    padding-left: 10em;
+  }
+  section.contact {
+    position: relative;
+  }
+  section.contact .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.contact .contact-right {
+    position: absolute;
+    right: 5em;
+    width: 50%;
+    height: 50%;
+  }
+  section.contact .contact-right iframe {
+    height: 100%;
+  }
+  .Educatie .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Educatie .utn {
+    width: 30%;
+    height: 200px;
+  }
+  .Educatie h1 {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .logo {
+    display: initial;
+    width: 35%;
+    margin-right: 0;
+  }
+  section.Educatie h1 {
+    padding-left: 19em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
